@@ -1,0 +1,6 @@
+###### IN Platform Requirements ######
+pydantic ~= 1.9.0                   # Data validation
+
+###### IN Deployer Specific Requirements ######
+fastapi ~= 0.71.0
+uvicorn ~= 0.16.0

@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  in_test:
+    container_name: in_test
+    build:
+      context: .
+      dockerfile: in_test.Dockerfile
+    restart: unless-stopped
+    ports:
+      - 8081:8081
+    networks:
+      - in_network
+    # Volumes enabled while testing
+    volumes:
+      - ./app:/app/
+      # - /dev/gpiomem:/dev/gpiomem
+      # - /sys:/sys
+
+networks:
+  in_network:
+    name: in_network
