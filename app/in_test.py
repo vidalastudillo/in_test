@@ -27,7 +27,7 @@ __author__ = 'Mauricio Vidal, VIDAL & ASTUDILLO Ltda.'
 import logging
 
 
-# Third paries requirements
+# Third parties requirements
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 
