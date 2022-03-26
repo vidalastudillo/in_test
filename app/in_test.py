@@ -33,7 +33,7 @@ from fastapi.responses import HTMLResponse
 
 
 # V&A requirements
-from libs_va.va_time import (
+from va_time import (
     GetNow_InSeconds,
 )
 
