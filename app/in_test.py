@@ -22,7 +22,7 @@ TODO
 """
 
 
-__version__ = '0.0.3-Beta'
+__version__ = '0.0.4-Beta'
 __author__ = 'Mauricio Vidal, VIDAL & ASTUDILLO Ltda.'
 
 
@@ -36,8 +36,8 @@ from fastapi.responses import HTMLResponse
 
 
 # V&A requirements
-from va_time import (
-    GetNow_InSeconds,
+from va_time.va_time import (
+    get_now_in_seconds,
 )
 
 
@@ -67,7 +67,7 @@ def read_root() -> HTMLResponse:
         <body>
         <p>Hello world!</p>
         <p>This App has version: {__version__}</p>
-        <p>{GetNow_InSeconds()}</p>
+        <p>{get_now_in_seconds()}</p>
         </body>
         <footer>
         <p>VIDAL & ASTUDILLO Ltda, 2016-2022<br>www.vidalastudillo.com</p>
