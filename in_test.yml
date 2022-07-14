@@ -1,6 +1,7 @@
 version: '3.5'
 
 services:
+
   in_test:
     container_name: in_test
     build:
@@ -20,3 +21,5 @@ services:
 networks:
   in_network:
     name: in_network
+    external: true
+  
